@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:id="@+id/titleID"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Form"
+       android:textAlignment="center"
+       android:textSize="50sp"/>
+
+    <EditText
+        android:inputType="textEmailAddress"
+        android:id="@+id/EmailID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:layout_below="@+id/titleID"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/PassID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:layout_below="@+id/EmailID"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/BtnID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@+id/PassID"/>
+
+
+</RelativeLayout>
